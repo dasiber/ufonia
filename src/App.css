@@ -1,32 +1,59 @@
-.App {
-  text-align: center;
+/* Add this CSS to your stylesheet */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
-  color: white;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.App-title {
-  font-size: 1.5em;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
 }
 
-.App-intro {
-  font-size: large;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+.error {
+  color: #c00;
+  font-size: 0.8em;
+  margin-top: 10px;
 }

@@ -1,5 +1,5 @@
 ---
-service: serverless-react-boilerplate
+service: lambda-phone-notifications
 frameworkVersion: "3"
 useDotenv: true
 variablesResolutionMode: 20210326
@@ -8,7 +8,7 @@ disabledDeprecations:
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   region: ${opt:region, 'us-east-1'}
   stage: ${opt:stage, 'dev'}
   memorySize: 512
@@ -49,11 +49,11 @@ functions:
     events:
       - http:
           path: /
-          method: any
+          method: get
           cors: true
       - http:
           path: /{any+}
-          method: any
+          method: get
           cors: true
 
 custom:

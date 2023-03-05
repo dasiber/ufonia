@@ -172,3 +172,5 @@ This will delete all resources but the distribution S3 bucket. As it still conta
 - Full [TypeScript](https://www.typescriptlang.org/) support using Babel 7 and Webpack 5, including custom [module resolution](https://www.typescriptlang.org/docs/handbook/module-resolution.html).
 - Handle server-side errors more gracefully. Update `handler.ts` to add your own custom error handling code such as [Youch](https://github.com/poppinss/youch).
 - Code cleanup and simplification
+
+curl -X POST https://xsxdjn99w1.execute-api.us-east-1.amazonaws.com/dev/ -d '{"key1": "phone", "message": "mymessage"}'
